@@ -11,7 +11,7 @@ struct hc595
     uint8_t val[CONFIG_HC595_LENGTH];
 };
 
-struct hc595 *shift_reg;
+static struct hc595 *shift_reg;
 
 void hc595_set_bit(uint8_t bit, uint8_t value);
 void hc595_toggle_bit(uint8_t bit);
