@@ -9,6 +9,8 @@
 #include "command.h" // DECL_COMMAND
 #include "compiler.h" // ARRAY_SIZE
 
+struct hc595 *shift_reg;
+
 void
 command_config_hc595(uint32_t *args)
 {
